@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Textilnova</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        
+        body {
+            background-color: #f5f5f5;
+        }
+        
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        nav {
+            background-color: #444;
+            padding: 10px;
+        }
+        
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+        }
+        
+        nav ul li {
+            margin: 0 15px;
+        }
+        
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+        
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        
+        .product-card {
+            background-color: white;
+            border-radius: 5px;
+            padding: 15px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .product-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+        
+        .product-card h3 {
+            margin: 10px 0;
+        }
+        
+        .price {
+            font-weight: bold;
+            color: #e63946;
+            margin: 10px 0;
+        }
+        
+        .add-to-cart {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 8px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+        }
+        
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+        }
+        
+        .cart-icon {
+            position: relative;
+        }
+        
+        .cart-count {
+            position: absolute;
+            top: -10px;
+            right: -10px;
+            background-color: red;
+            color: white;
+            border-radius: 50%;
+            padding: 2px 6px;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>TextilNova</h1>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Productos</a></li>
+            <li><a href="#">Categorías</a></li>
+            <li><a href="#">Ofertas</a></li>
+            <li class="cart-icon">
+                <a href="#">Carrito <span class="cart-count">0</span></a>
+            </li>
+        </ul>
+    </nav>
+    
+    <div class="container">
+        <h2>Nuestros Productos Destacados</h2>
+        
+        <div class="product-grid">
+            <!-- Producto 1 -->
+            <div class="product-card">
+                <img src="https://acdn-us.mitiendanube.com/stores/962/628/products/kill-dia-23129-7a3fd8bf928096c9b917080236797528-480-0.jpg" alt="Producto 1">
+                <h3>Remera</h3>
+                <p>Hermosa remera, combina con cualquier indumentaria.</p>
+                <div class="price">$19.99</div>
+                <button class="add-to-cart">Añadir al carrito</button>
+            </div>
+            
+            <!-- Producto 2 -->
+            <div class="product-card">
+                <img src="https://acdn-us.mitiendanube.com/stores/962/628/products/kill_26feb_7652-copia-51d73059785fc5126917437953862847-640-0.jpg" alt="Producto 2">
+                <h3>Buzo</h3>
+                <p>Estetica a la vista agradable, abrigado por dentro.</p>
+                <div class="price">$24.99</div>
+                <button class="add-to-cart">Añadir al carrito</button>
+            </div>
+            
+            <!-- Producto 3 -->
+            <div class="product-card">
+                <img src="https://acdn-us.mitiendanube.com/stores/962/628/products/kill_loook-boook_abr_5575-c65b596d0c76b2a3da17145041120927-640-0.jpg" alt="Producto 3">
+                <h3>Campera</h3>
+                <p>Ideal para noches de frio, comodidad absoluta.</p>
+                <div class="price">$29.99</div>
+                <button class="add-to-cart">Añadir al carrito</button>
+            </div>
+            
+            <!-- Producto 4 -->
+            <div class="product-card">
+                <img src="https://acdn-us.mitiendanube.com/stores/962/628/products/kill_21ago_ii2348-82dfc45168075c25f717262450905562-640-0.jpg" alt="Producto 4">
+                <h3>Jeans</h3>
+                <p>El lujo es vulgaridad. Excepto este jean, la rompe.</p>
+                <div class="price">$34.99</div>
+                <button class="add-to-cart">Añadir al carrito</button>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <p>&copy; TextilNova. Todos los derechos reservados.</p>
+        <p>
+            <p>Matias Barraza</p>
+            <p>Luana Atampi</p>
+            <p>Nicole Leiva</p>
+            <p>Violeta Gonzales</p>
+            <p>Valentina Peñalva</p>
+            <a href="#">Términos y condiciones</a> | 
+            <a href="#">Política de privacidad</a> | 
+            <a href="#">Contacto</a>
+        </p>
+    </footer>
+    
+    <script>
+        // JavaScript básico para funcionalidad del carrito
+        document.addEventListener('DOMContentLoaded', function() {
+            const addToCartButtons = document.querySelectorAll('.add-to-cart');
+            const cartCount = document.querySelector('.cart-count');
+            let count = 0;
+            
+            addToCartButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    count++;
+                    cartCount.textContent = count;
+                    
+                    // Aquí podrías añadir lógica para almacenar el producto en el carrito
+                    alert('Producto añadido al carrito');
+                });
+            });
+        });
+    </script>
+</body>
+</html>
