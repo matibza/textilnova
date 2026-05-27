@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ardion - Calendario Mensual de Turnos</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <div class="nav-container">
+            <div class="logo">ARDION<span>_</span></div>
+            <a href="/home/matibza/Descargas/Deposito/separaciones/index2.html" class="btn-volver">&#8592; Volver al Panel</a>
+        </div>
+    </header>
+
+    <main>
+        <div class="seccion-encabezado">
+            <h2>Recorrido Mensual de Esquemas</h2>
+            <p style="color: #666; font-size: 0.95rem;">Rotación de Bloques Operativos 24/7</p>
+        </div>
+
+        <section>
+            <div class="acciones-barra">
+                <div class="mes-control">
+                    <button class="btn-flecha">&lt;</button>
+                    <span>MAYO 2026</span>
+                    <button class="btn-flecha">&gt;</button>
+                </div>
+                <span style="font-size: 0.85rem; color: #666;">Horarios fijos de 8 hs por cuadrilla</span>
+            </div>
+
+            <div class="tabla-contenedor">
+                <table>
+                    <thead>
+                        <tr>
+                            <th style="text-align: left; padding-left: 1rem;">Día / Fecha</th>
+                            <th>Turno A</th>
+                            <th>Turno B</th>
+                            <th>Turno C</th>
+                            <th>Turno D</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Calendario Completo de 31 días (Mayo 2026) -->
+                        <tr><td class="col-fecha">Viernes 01</td><td><span class="h-badge manana">06 - 14</span></td><td><span class="h-badge tarde">14 - 22</span></td><td><span class="h-badge noche">22 - 06</span></td><td><span class="h-badge franco">Franco</span></td></tr>
+                        <tr class="fin-semana"><td class="col-fecha">Sábado 02</td><td><span class="h-badge manana">06 - 14</span></td><td><span class="h-badge tarde">14 - 22</span></td><td><span class="h-badge noche">22 - 06</span></td><td><span class="h-badge franco">Franco</span></td></tr>
+                        <tr class="fin-semana"><td class="col-fecha">Domingo 03</td><td><span class="h-badge franco">Franco</span></td><td><span class="h-badge manana">06 - 14</span></td><td><span class="h-badge tarde">14 - 22</span></td><td><span class="h-badge noche">22 - 06</span></td></tr>
+                        <tr><td class="col-fecha">Lunes 04</td><td><span class="h-badge franco">Franco</span></td><td><span class="h-badge manana">06 - 14</span></td><td><span class="h-badge tarde">14 - 22</span></td><td><span class="h-badge noche">22 - 06</span></td></tr>
+                        <tr><td class="col-fecha">Martes 05</td><td><span class="h-badge noche">22 - 06</span></td><td><span class="h-badge franco">Franco</span></td><td><span class="h-badge manana">06 - 14</span></td><td><span class="h-badge tarde">14 - 22</span></td></tr>
+                        <tr><td class="col-fecha">Miércoles 06</td><td><span class="h-badge noche">22 - 06</span></td><td><span class="h-badge franco">Franco</span></td><td><span class="h-badge manana">06 - 14</span></td><td><span class="h-badge tarde">14 - 22</span></td></tr>
+                        <tr><td class="col-fecha">Jueves 07</td><td><span class="h-badge tarde">14 - 22</span></td><td><span class="h-badge noche">22 - 06</span></td><td><span class="h-badge franco">Franco</span></td><td><span class="h-badge manana">06 - 14</span></td></tr>
+                        <tr><td class="col-fecha">Viernes 08</td><td><span class="h-badge tarde">14 - 22</span></td><td><span class="h-badge noche">22 - 06</span></td><td><span class="h-badge franco">Franco</span></td><td><span class="h-badge manana">06 - 14</span></td></tr>
+                        <tr class="fin-semana"><td class="col-fecha">Sábado 09</td><td><span class="h-badge manana">06 - 14</span></td><td><span class="h-badge tarde">14 - 22</span></td><td><span class="h-badge noche">22 - 06</span></td><td><span class="h-badge franco">Franco</span></td></tr>
+                        <tr class="fin-semana"><td class="col-fecha">Domingo 10</td><td><span class="h-badge manana">06 - 14</span></td><td><span class="h-badge tarde">14 - 22</span></td><td><span class="h-badge noche">22 - 06</span></td><td><span class="h-badge franco">Franco</span></td></tr>
+                        <tr><td class="col-fecha">Lunes 11</td><td><span class="h-badge franco">Franco</span></td><td><span class="h-badge manana">06 - 14</span></td><td><span class="h-badge tarde">14 - 22</span></td><td><span class="h-badge noche">22 - 06</span></td></tr>
+                        <tr><td class="col-fecha">Martes 12</td><td><span class="h-badge franco">Franco</span></td><td><span class="h-badge manana">06 - 14</span></td><td><span class="h-badge tarde">14 - 22</span></td><td><span class="h-badge noche">22 - 06</span></td></tr>
+                        <tr><td class="col-fecha">Miércoles 13</td><td><span class="h-badge noche">22 - 06</span></td><td><span class="h-badge franco">Franco</span></td><td><span class="h-badge manana">06 - 14</span></td><td><span class="h-badge tarde">14 - 22</span></td></tr>
+                        <tr><td class="col-fecha">Jueves 14</td><td><span class="h-badge noche">22 - 06</span></td><td><span class="h-badge franco">Franco</span></td><td><span class="h-badge manana">06 - 14</span></td><td><span class="h-badge tarde">14 - 22</span></td></tr>
+                        <tr><td class="col-fecha">Viernes 15</td><td><span class="h-badge tarde">14 - 22</span></td><td><span class="h-badge noche">22 - 06</span></td><td><span class="h-badge franco">Franco</span></td><td><span class="h-badge manana">06 - 14</span></td></tr>
+                        <tr class="fin-semana"><td class="col-fecha">Sábado 16</td><td><span class="h-badge tarde">14 - 22</span></td><td><span class="h-badge noche">22 - 06</span></td><td><span class="h-badge franco">Franco</span></td><td><span class="h-badge manana">06 - 14</span></td></tr>
+                        <tr class="fin-semana"><td class="col-fecha">Domingo 17</td><td><span class="h-badge manana">06 - 14</span></td><td><span class="h-badge tarde">14 - 22</span></td><td><span class="h-badge noche">22 - 06</span></td><td><span class="h-badge franco">Franco</span></td></tr>
+                        <tr><td class="col-fecha">Lunes 18</td><td><span class="h-badge manana">06 - 14</span></td><td><span class="h-badge tarde">14 - 22</span></td><td><span class="h-badge noche">22 - 06</span></td><td><span class="h-badge franco">Franco</span></td></tr>
+                        <tr><td class="col-fecha">Martes 19</td><td><span class="h-badge franco">Franco</span></td><td><span class="h-badge manana">06 - 14</span></td><td><span class="h-badge tarde">14 - 22</span></td><td><span class="h-badge noche">22 - 06</span></td></tr>
+                        <tr><td class="col-fecha">Miércoles 20</td><td><span class="h-badge franco">Franco</span></td><td><span class="h-badge manana">06 - 14</span></td><td><span class="h-badge tarde">14 - 22</span></td><td><span class="h-badge noche">22 - 06</span></td></tr>
+                        <tr><td class="col-fecha">Jueves 21</td><td><span class="h-badge noche">22 - 06</span></td><td><span class="h-badge franco">Franco</span></td><td><span class="h-badge manana">06 - 14</span></td><td><span class="h-badge tarde">14 - 22</span></td></tr>
+                        <tr><td class="col-fecha">Viernes 22</td><td><span class="h-badge noche">22 - 06</span></td><td><span class="h-badge franco">Franco</span></td><td><span class="h-badge manana">06 - 14</span></td><td><span class="h-badge tarde">14 - 22</span></td></tr>
+                        <tr class="fin-semana"><td class="col-fecha">Sábado 23</td><td><span class="h-badge tarde">14 - 22</span></td><td><span class="h-badge noche">22 - 06</span></td><td><span class="h-badge franco">Franco</span></td><td><span class="h-badge manana">06 - 14</span></td></tr>
+                        <tr class="fin-semana"><td class="col-fecha">Domingo 24</td><td><span class="h-badge tarde">14 - 22</span></td><td><span class="h-badge noche">22 - 06</span></td><td><span class="h-badge franco">Franco</span></td><td><span class="h-badge manana">06 - 14</span></td></tr>
+                        <tr><td class="col-fecha">Lunes 25</td><td><span class="h-badge manana">06 - 14</span></td><td><span class="h-badge tarde">14 - 22</span></td><td><span class="h-badge noche">22 - 06</span></td><td><span class="h-badge franco">Franco</span></td></tr>
+                        <tr><td class="col-fecha">Martes 26</td><td><span class="h-badge manana">06 - 14</span></td><td><span class="h-badge tarde">14 - 22</span></td><td><span class="h-badge noche">22 - 06</span></td><td><span class="h-badge franco">Franco</span></td></tr>
+                        <tr><td class="col-fecha">Miércoles 27</td><td><span class="h-badge franco">Franco</span></td><td><span class="h-badge manana">06 - 14</span></td><td><span class="h-badge tarde">14 - 22</span></td><td><span class="h-badge noche">22 - 06</span></td></tr>
+                        <tr><td class="col-fecha">Jueves 28</td><td><span class="h-badge franco">Franco</span></td><td><span class="h-badge manana">06 - 14</span></td><td><span class="h-badge tarde">14 - 22</span></td><td><span class="h-badge noche">22 - 06</span></td></tr>
+                        <tr><td class="col-fecha">Viernes 29</td><td><span class="h-badge noche">22 - 06</span></td><td><span class="h-badge franco">Franco</span></td><td><span class="h-badge manana">06 - 14</span></td><td><span class="h-badge tarde">14 - 22</span></td></tr>
+                        <tr class="fin-semana"><td class="col-fecha">Sábado 30</td><td><span class="h-badge noche">22 - 06</span></td><td><span class="h-badge franco">Franco</span></td><td><span class="h-badge manana">06 - 14</span></td><td><span class="h-badge tarde">14 - 22</span></td></tr>
+                        <tr class="fin-semana"><td class="col-fecha">Domingo 31</td><td><span class="h-badge tarde">14 - 22</span></td><td><span class="h-badge noche">22 - 06</span></td><td><span class="h-badge franco">Franco</span></td><td><span class="h-badge manana">06 - 14</span></td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Ardion Logística S.A. - Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
